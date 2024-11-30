@@ -11,7 +11,8 @@ import {
   FlexImg,
   Icon,
 } from "../styles/AllTopics.styles";
-import topics from "./data/topics";
+import { Link as RouterLink } from "react-router-dom";
+import topics from "../data/topics";
 
 const AllTopics = () => {
   return (
@@ -32,7 +33,13 @@ const AllTopics = () => {
               {topic.items.map((item, idx) => (
                 <TestItem key={idx}>
                   <Icon src="/icons/test-icon.svg" alt="Test Icon" />
-                  <Link href="#">{item}</Link>
+                  {/* Dynamically generate links */}
+                  <RouterLink
+                    to={`/topics/${encodeURIComponent(item)}`}
+                    style={{ textDecoration: "none", color: "inherit" }}
+                  >
+                    {item}
+                  </RouterLink>
                 </TestItem>
               ))}
             </TopicsList>

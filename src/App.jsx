@@ -1,14 +1,16 @@
 import React from "react";
-import OnlineTests from "./components/OnlineTests";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import AllTopics from "./components/AllTopics";
-import './App.css';
+import TopicPage from "./pages/TopicPage";
 
 const App = () => {
   return (
-    <div className="container">
-      <OnlineTests />
-      <AllTopics />
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<AllTopics />} />
+        <Route path="/topics/:topicName" element={<TopicPage />} />
+      </Routes>
+    </Router>
   );
 };
 
