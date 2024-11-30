@@ -9,14 +9,15 @@ import {
 import { CategoryLine } from "../styles/AllTopics.styles";
 
 const TopicPage = () => {
-  const { topicName } = useParams(); // Retrieve the topic name from the URL
+  const { topicName } = useParams(); 
+  const decodedTopicName = decodeURIComponent(topicName); 
 
   return (
     <TopicPageContainer>
       <TopicTitle>{topicName}</TopicTitle>
       <CategoryLine />
       <TopicDescription>
-        This is the page for <TopicStrong>{topicName}</TopicStrong>. Add specific
+        This is the page for <TopicStrong>{decodedTopicName}</TopicStrong>. Add specific
         content for this topic here.
       </TopicDescription>
     </TopicPageContainer>
