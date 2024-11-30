@@ -17,7 +17,7 @@ const AllTopics = () => {
   return (
     <AllTopicsContainer>
       <FlexImg>
-        <Icon src="/icons/list-icon.svg" alt="List Icon" />
+        <Icon src="/list-icon.svg" alt="List Icon" />
         <Title>All Topics</Title>
       </FlexImg>
       <TopicsList>
