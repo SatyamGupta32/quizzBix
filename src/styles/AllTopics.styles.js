@@ -14,7 +14,7 @@ export const AllTopicsContainer = styled.div`
 
 export const Title = styled.h2`
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 600;
 `;
 
 export const TopicsList = styled.ul`
@@ -26,6 +26,7 @@ export const TopicsList = styled.ul`
 export const TopicCategory = styled.h3`
   font-size: 18px;
   color: #333;
+  font-weight: 600;
 `;
 
 export const CategoryLine = styled.div`
@@ -42,6 +43,10 @@ export const TestItem = styled.li`
   display: flex;
   gap: 10px;
   margin: 24px 0 24px 24px;
+  
+  @media (max-width: 768px){
+    margin: 24px 0 14px 14px;
+  }
 `;
 
 export const StyledLink = styled(RouterLink)`
@@ -50,6 +55,10 @@ export const StyledLink = styled(RouterLink)`
 
   &:hover {
     text-decoration: underline;
+  }
+
+  @media (max-width: 768px){
+    font-size: 14px;
   }
 `;
 
