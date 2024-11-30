@@ -1,17 +1,23 @@
 import React from "react";
 import { useParams } from "react-router-dom";
+import {
+  TopicPageContainer,
+  TopicTitle,
+  TopicDescription,
+  TopicStrong,
+} from "../styles/TopicPage.styles";
 
 const TopicPage = () => {
   const { topicName } = useParams(); // Retrieve the topic name from the URL
 
   return (
-    <div style={{ padding: "20px" }}>
-      <h1>{topicName}</h1>
-      <p>
-        This is the page for <strong>{topicName}</strong>. Add specific content
-        for this topic here.
-      </p>
-    </div>
+    <TopicPageContainer>
+      <TopicTitle>{topicName}</TopicTitle>
+      <TopicDescription>
+        This is the page for <TopicStrong>{topicName}</TopicStrong>. Add specific
+        content for this topic here.
+      </TopicDescription>
+    </TopicPageContainer>
   );
 };
 

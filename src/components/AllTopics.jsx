@@ -7,11 +7,10 @@ import {
   CategoryLine,
   TopicItem,
   TestItem,
-  Link,
+  StyledLink,
   FlexImg,
   Icon,
 } from "../styles/AllTopics.styles";
-import { Link as RouterLink } from "react-router-dom";
 import topics from "../data/topics";
 
 const AllTopics = () => {
@@ -33,13 +32,9 @@ const AllTopics = () => {
               {topic.items.map((item, idx) => (
                 <TestItem key={idx}>
                   <Icon src="/icons/test-icon.svg" alt="Test Icon" />
-                  {/* Dynamically generate links */}
-                  <RouterLink
-                    to={`/topics/${encodeURIComponent(item)}`}
-                    style={{ textDecoration: "none", color: "inherit" }}
-                  >
+                  <StyledLink to={`/topics/${encodeURIComponent(item)}`}>
                     {item}
-                  </RouterLink>
+                  </StyledLink>
                 </TestItem>
               ))}
             </TopicsList>
