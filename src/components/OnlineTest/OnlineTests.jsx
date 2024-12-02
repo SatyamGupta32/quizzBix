@@ -1,5 +1,5 @@
 import React from "react";
-import { OnlineTestsContainer, Title, Breadcrumb, Separator } from "./OnlineTests.styles";
+import { OnlineTestsContainer, Title, Breadcrumb, Separator } from "../OnlineTests.styles";
 
 const OnlineTests = () => {
   return (

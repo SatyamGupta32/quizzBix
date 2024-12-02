@@ -6,7 +6,7 @@ import {
   TopicDescription,
   TopicStrong,
 } from "./TopicPage.styles";
-import { CategoryLine } from "../components/AllTopics.styles";
+import { CategoryLine } from "../AllTopics/AllTopics.styles";
 
 const TopicPage = () => {
   const { topicName } = useParams();

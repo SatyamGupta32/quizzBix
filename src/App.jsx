@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import AllTopics from "./components/AllTopics";
-import TopicPage from "./pages/TopicPage";
+import AllTopics from "./components/AllTopics/AllTopics";
+import TopicPage from "./components/TopicPage/TopicPage";
 
 const App = () => {
   return (

@@ -11,7 +11,7 @@ import {
   FlexImg,
   Icon,
 } from "./AllTopics.styles";
-import topics from "../data/topics";
+import topics from "../../data/topics";
 
 const AllTopics = () => {
   return (
