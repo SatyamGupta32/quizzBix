@@ -10,7 +10,7 @@ import {
   StyledLink,
   FlexImg,
   Icon,
-} from "../styles/AllTopics.styles";
+} from "./AllTopics.styles";
 import topics from "../data/topics";
 
 const AllTopics = () => {
